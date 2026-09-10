@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn - Quizzes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">EduLearn LMS</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="assignments.html">Assignments</a></li>
+            <li><a href="quiz.html" class="active">Quizzes</a></li>
+            <li><a href="analytics.html">Analytics</a></li>
+            <li><a href="certificate.html">Certificate</a></li>
+            <li><a href="instructor.html">Instructor Panel</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <div class="form-container" style="max-width: 600px;">
+            <h2>Web Knowledge Checkpoint</h2>
+            <hr style="margin: 1rem 0;">
+            
+            <form id="quiz-form">
+                <div class="form-group">
+                    <p><strong>1. Which CSS property changes element layouts to modern flex containers?</strong></p>
+                    <input type="radio" id="q1a" name="q1" value="block"> <label for="q1a" style="display:inline;">display: block;</label><br>
+                    <input type="radio" id="q1b" name="q1" value="flex"> <label for="q1b" style="display:inline;">display: flex;</label><br>
+                    <input type="radio" id="q1c" name="q1" value="inline"> <label for="q1c" style="display:inline;">display: inline;</label>
+                </div>
+
+                <div class="form-group" style="margin-top: 1.5rem;">
+                    <p><strong>2. Which JS array method returns a brand-new modified array?</strong></p>
+                    <input type="radio" id="q2a" name="q2" value="forEach"> <label for="q2a" style="display:inline;">forEach()</label><br>
+                    <input type="radio" id="q2b" name="q2" value="map"> <label for="q2b" style="display:inline;">map()</label><br>
+                    <input type="radio" id="q2c" name="q2" value="push"> <label for="q2c" style="display:inline;">push()</label>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">Submit Quiz</button>
+            </form>
+
+            <div id="quiz-result" style="margin-top: 1rem; display: none; text-align: center; font-size: 1.2rem; font-weight: bold;"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; EduLearn LMS. All rights reserved.</p>
+    </footer>
+    <script src="js/quiz.js"></script>
+</body>
+</html>

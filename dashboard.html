@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">EduLearn LMS</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="dashboard.html" class="active">Dashboard</a></li>
+            <li><a href="assignments.html">Assignments</a></li>
+            <li><a href="quiz.html">Quizzes</a></li>
+            <li><a href="analytics.html">Analytics</a></li>
+            <li><a href="certificate.html">Certificate</a></li>
+            <li><a href="instructor.html">Instructor Panel</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h2>Student Learning Dashboard</h2>
+        <div class="grid" style="margin-top: 1.5rem;">
+            <div class="card">
+                <h3>HTML5 & Web Semantics</h3>
+                <p>Status: In Progress</p>
+                <label>Completion: <span id="html-percent">40%</span></label>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="html-progress" style="width: 40%;"></div>
+                </div>
+                <button class="btn" onclick="updateProgress('html-progress', 'html-percent')">Complete Step (+20%)</button>
+            </div>
+
+            <div class="card">
+                <h3>JavaScript Core & ES6+</h3>
+                <p>Status: In Progress</p>
+                <label>Completion: <span id="js-percent">20%</span></label>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="js-progress" style="width: 20%;"></div>
+                </div>
+                <button class="btn" onclick="updateProgress('js-progress', 'js-percent')">Complete Step (+20%)</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; EduLearn LMS. All rights reserved.</p>
+    </footer>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

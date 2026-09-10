@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn - Instructor Panel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">EduLearn LMS</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="assignments.html">Assignments</a></li>
+            <li><a href="quiz.html">Quizzes</a></li>
+            <li><a href="analytics.html">Analytics</a></li>
+            <li><a href="certificate.html">Certificate</a></li>
+            <li><a href="instructor.html" class="active">Instructor Panel</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h2>Instructor Management Portal</h2>
+        <div class="course-layout" style="margin-top: 1.5rem;">
+            <div class="card">
+                <h3>Add New Course</h3>
+                <form id="create-course-form" style="margin-top: 1rem;">
+                    <div class="form-group">
+                        <label>Course Name</label>
+                        <input type="text" id="new-title" required placeholder="e.g. React & Redux Toolkit">
+                    </div>
+                    <div class="form-group">
+                        <label>Description</label>
+                        <textarea id="new-desc" rows="3" required placeholder="Summary of topics..."></textarea>
+                    </div>
+                    <button type="submit" class="btn">Publish Course</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <h3>Active Courses</h3>
+                <ul class="sidebar-list" id="course-list" style="margin-top: 1rem;">
+                    <li>1. HTML5 & Web Semantics</li>
+                    <li>2. CSS3 Layouts</li>
+                    <li>3. JavaScript Core</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; EduLearn LMS. All rights reserved.</p>
+    </footer>
+    <script src="js/instructor.js"></script>
+</body>
+</html>

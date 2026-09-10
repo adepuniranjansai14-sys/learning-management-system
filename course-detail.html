@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn - Class Player</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">EduLearn LMS</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html" class="active">Courses</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="assignments.html">Assignments</a></li>
+            <li><a href="quiz.html">Quizzes</a></li>
+            <li><a href="analytics.html">Analytics</a></li>
+            <li><a href="certificate.html">Certificate</a></li>
+            <li><a href="instructor.html">Instructor Panel</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h2>JavaScript Core Principles</h2>
+        <br>
+        <div class="course-layout">
+            <div class="card">
+                <div style="background: #111; height: 320px; display: flex; align-items: center; justify-content: center; color: white; border-radius: 6px;">
+                    <h3>[ Embedded Video Player ]</h3>
+                </div>
+                <h3 style="margin-top: 1rem;" id="lesson-title">Lesson 1: Variable Declaration</h3>
+                <p style="margin-top: 0.5rem;">Learn how scoped variable allocations work with <code>let</code>, <code>const</code>, and global declarations.</p>
+            </div>
+            
+            <div class="card">
+                <h3>Module Chapters</h3>
+                <ul class="sidebar-list" style="margin-top: 1rem;">
+                    <li onclick="changeLesson('Lesson 1: Variable Declaration')">1. Variables & Scope</li>
+                    <li onclick="changeLesson('Lesson 2: Arrow Functions')">2. Arrow Functions</li>
+                    <li onclick="changeLesson('Lesson 3: DOM Interactions')">3. DOM Interactions</li>
+                    <li onclick="changeLesson('Lesson 4: Async & Fetch API')">4. Async & Fetch API</li>
+                </ul>
+                <a href="quiz.html" class="btn" style="width: 100%; text-align: center; margin-top: 1.5rem;">Take Chapter Quiz</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; EduLearn LMS. All rights reserved.</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

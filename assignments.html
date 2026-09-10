@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn - Assignments</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">EduLearn LMS</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="assignments.html" class="active">Assignments</a></li>
+            <li><a href="quiz.html">Quizzes</a></li>
+            <li><a href="analytics.html">Analytics</a></li>
+            <li><a href="certificate.html">Certificate</a></li>
+            <li><a href="instructor.html">Instructor Panel</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h2>Course Assignments</h2>
+        <table class="lms-table">
+            <thead>
+                <tr>
+                    <th>Course Title</th>
+                    <th>Task Name</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML5 & Web Semantics</td>
+                    <td>Build Profile Webpage</td>
+                    <td><span class="badge badge-success">Passed (90/100)</span></td>
+                    <td><button class="btn btn-secondary" style="padding: 0.3rem; margin:0;" disabled>Completed</button></td>
+                </tr>
+                <tr>
+                    <td>JavaScript Core</td>
+                    <td>Dynamic Todo Application</td>
+                    <td><span class="badge badge-warning" id="status-task">Pending</span></td>
+                    <td><button class="btn" style="padding: 0.3rem; margin:0;" onclick="openUpload('JS Todo App')">Upload Project</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="form-container" id="upload-box" style="margin-top: 2rem; display: none;">
+            <h3>Submit Assignment: <span id="current-task"></span></h3>
+            <form id="assignment-form" style="margin-top: 1rem;">
+                <div class="form-group">
+                    <label>Project Repository / Live URL</label>
+                    <input type="url" required placeholder="https://github.com/user/project">
+                </div>
+                <button type="submit" class="btn">Submit Task</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; EduLearn LMS. All rights reserved.</p>
+    </footer>
+    <script src="js/assignments.js"></script>
+</body>
+</html>
